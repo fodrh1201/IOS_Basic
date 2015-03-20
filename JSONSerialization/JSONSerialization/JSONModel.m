@@ -16,6 +16,10 @@
         NSArray* keys = [jsonData allKeys];
         NSUInteger length = [keys count];
         
+        if (length == 0) {
+            return [result stringByAppendingString:@"}"];
+        }
+        
         for (int i = 0; i < length - 1; i++) {
             id object = [jsonData objectForKey:keys[i]];
             NSString* elem = [NSString stringWithFormat:@"%@ : %@, ", keys[i], [self dataToString:object] ];
@@ -31,6 +35,10 @@
     } else if ([jsonData isKindOfClass:[NSArray class]]) {
         NSString* result = @"[";
         NSUInteger length = [jsonData count];
+        
+        if (length == 0) {
+            return [result stringByAppendingString:@"]"];
+        }
         
         for (int i = 0; i < length - 1; i++) {
             id object = [jsonData objectAtIndex:i];
@@ -55,7 +63,7 @@
     
     NSMutableArray* array = [[NSMutableArray alloc] init];
     int index = 0;
-    jsonData = [self eliminateWhiteSpace:jsonData];
+    //jsonData = [self eliminateWhiteSpace:jsonData];
     while (index < [jsonData length]) {
         int secondIndex = [self pairElementIndex:jsonData initIndex:index];
         
@@ -76,13 +84,13 @@
 
 -(NSDictionary *) MyJSONSerialzationToDictFrom:(NSString *)jsonData {
     NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
-    jsonData = [self eliminateWhiteSpace:jsonData];
+    //jsonData = [self eliminateWhiteSpace:jsonData];
     
     NSArray* array = [self MyJSONSerialzationToArrayFrom:jsonData];
     
     int i = 0;
     while (i < [array count]) {
-        [dict setValue:[self MyJSONSerialzationFrom: [array objectAtIndex:i+1]] forKey:[array objectAtIndex:i]];
+        [dict setValue:[array objectAtIndex:i+1] forKey:[array objectAtIndex:i]];
         i = i + 2;
     }
     
@@ -90,63 +98,75 @@
 }
 
 -(NSString *) eliminateWhiteSpace:(NSString *)data {
-    BOOL isQuatation = false;
-    char* removeWhiteSpace = (char*) malloc(sizeof(char)*([data length]+1));
-    int index = 0;
-    
-    for (int i= 0; i < [data length]; i++) {
-        char character = [data characterAtIndex:i];
-        switch (character) {
-            case '\'':
-                if (isQuatation) {
-                    isQuatation = false;
-                } else {
-                    isQuatation = true;
-                }
-                removeWhiteSpace[index] = character;
-                index++;
-                break;
-            case '"':
-                if (isQuatation) {
-                    isQuatation = false;
-                } else {
-                    isQuatation = true;
-                }
-                removeWhiteSpace[index] = character;
-                index++;
-                break;
-            case ' ':
-                if (isQuatation) {
-                    removeWhiteSpace[index] = character;
-                    index++;
-                }
-                break;
-            default:
-                removeWhiteSpace[index] = character;
-                index++;
-                break;
-        }
-    }
-    removeWhiteSpace[index] = '\0';
-    
-    NSString* result = [NSString stringWithUTF8String:removeWhiteSpace];
-    free(removeWhiteSpace);
-    
-    if (index == 0)
-        result = @"";
-    
-    return result;
+//    BOOL isQuatation = false;
+//    char* removeWhiteSpace = (char*) malloc(sizeof(char)*([data length]+1));
+//    int index = 0;
+//    
+//    for (int i= 0; i < [data length]; i++) {
+//        char character = [data characterAtIndex:i];
+//        switch (character) {
+//            case '\'':
+//                if (isQuatation) {
+//                    isQuatation = false;
+//                } else {
+//                    isQuatation = true;
+//                }
+//                removeWhiteSpace[index] = character;
+//                index++;
+//                break;
+//            case '"':
+//                if (isQuatation) {
+//                    isQuatation = false;
+//                } else {
+//                    isQuatation = true;
+//                }
+//                removeWhiteSpace[index] = character;
+//                index++;
+//                break;
+//            case ' ':
+//                if (isQuatation) {
+//                    removeWhiteSpace[index] = character;
+//                    index++;
+//                }
+//                break;
+//            default:
+//                removeWhiteSpace[index] = character;
+//                index++;
+//                break;
+//        }
+//        printf("%s\n", removeWhiteSpace);
+//    }
+//    removeWhiteSpace[index] = '\0';
+//    
+//    NSString* result = [NSString stringWithUTF8String:removeWhiteSpace];
+//    free(removeWhiteSpace);
+//    
+//    if (index == 0)
+//        result = @"";
+//    
+//    return result;
+    data = [data stringByReplacingOccurrencesOfString:@" " withString:@""];
+    data = [data stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    //data = [data stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    return data;
 }
 
 -(id) MyJSONSerialzationFrom:(NSString *)json {
     NSString* jsonData = [self eliminateWhiteSpace:json];
     char type = [jsonData characterAtIndex:0];
     if (type == '[') {
+        if ([jsonData length] -2 == 0){
+            return [[NSArray alloc] init];
+        }
         NSString* subStr = [jsonData substringWithRange:NSMakeRange(1, [jsonData length] -2)];
         
         return [self MyJSONSerialzationToArrayFrom:subStr];
         
     } else if (type == '{') {
+        if ([jsonData length] -2 == 0){
+            return [[NSDictionary alloc] init];
+        }
+        
         NSString* subStr = [jsonData substringWithRange:NSMakeRange(1, [jsonData length] -2)];
         
         return [self MyJSONSerialzationToDictFrom:subStr];
@@ -159,7 +179,7 @@
 }
 
 -(int) pairElementIndex:(NSString* ) jsonData initIndex:(int) firstIndex {
-    jsonData = [self eliminateWhiteSpace:jsonData];
+    //jsonData = [self eliminateWhiteSpace:jsonData];
     char type = [jsonData characterAtIndex:firstIndex];
     int index = firstIndex + 1;
     int count = 1;
