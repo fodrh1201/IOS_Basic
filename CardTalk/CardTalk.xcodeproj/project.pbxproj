@@ -7,53 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30733B5E1AC12F76001DC13D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30733B5D1AC12F76001DC13D /* main.m */; };
-		30733B611AC12F76001DC13D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30733B601AC12F76001DC13D /* AppDelegate.m */; };
-		30733B641AC12F76001DC13D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30733B631AC12F76001DC13D /* FirstViewController.m */; };
-		30733B671AC12F76001DC13D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30733B661AC12F76001DC13D /* SecondViewController.m */; };
-		30733B6A1AC12F76001DC13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30733B681AC12F76001DC13D /* Main.storyboard */; };
-		30733B6C1AC12F76001DC13D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30733B6B1AC12F76001DC13D /* Images.xcassets */; };
-		30733B6F1AC12F76001DC13D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30733B6D1AC12F76001DC13D /* LaunchScreen.xib */; };
-		30733B7B1AC12F76001DC13D /* CardTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30733B7A1AC12F76001DC13D /* CardTalkTests.m */; };
+		308881D71ADBA21500298B84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308881D61ADBA21500298B84 /* main.m */; };
+		308881DA1ADBA21500298B84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308881D91ADBA21500298B84 /* AppDelegate.m */; };
+		308881DD1ADBA21500298B84 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308881DC1ADBA21500298B84 /* MasterViewController.m */; };
+		308881E01ADBA21500298B84 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308881DF1ADBA21500298B84 /* DetailViewController.m */; };
+		308881E31ADBA21500298B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308881E11ADBA21500298B84 /* Main.storyboard */; };
+		308881E51ADBA21500298B84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308881E41ADBA21500298B84 /* Images.xcassets */; };
+		308881E81ADBA21500298B84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308881E61ADBA21500298B84 /* LaunchScreen.xib */; };
+		308881F41ADBA21500298B84 /* CardTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 308881F31ADBA21500298B84 /* CardTalkTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30733B751AC12F76001DC13D /* PBXContainerItemProxy */ = {
+		308881EE1ADBA21500298B84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 30733B501AC12F76001DC13D /* Project object */;
+			containerPortal = 308881C91ADBA21500298B84 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 30733B571AC12F76001DC13D;
+			remoteGlobalIDString = 308881D01ADBA21500298B84;
 			remoteInfo = CardTalk;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30733B581AC12F76001DC13D /* CardTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		30733B5C1AC12F76001DC13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30733B5D1AC12F76001DC13D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30733B5F1AC12F76001DC13D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		30733B601AC12F76001DC13D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30733B621AC12F76001DC13D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		30733B631AC12F76001DC13D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		30733B651AC12F76001DC13D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		30733B661AC12F76001DC13D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		30733B691AC12F76001DC13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		30733B6B1AC12F76001DC13D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		30733B6E1AC12F76001DC13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		30733B741AC12F76001DC13D /* CardTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30733B791AC12F76001DC13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30733B7A1AC12F76001DC13D /* CardTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTalkTests.m; sourceTree = "<group>"; };
+		308881D11ADBA21500298B84 /* CardTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		308881D51ADBA21500298B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308881D61ADBA21500298B84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		308881D81ADBA21500298B84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		308881D91ADBA21500298B84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		308881DB1ADBA21500298B84 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		308881DC1ADBA21500298B84 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		308881DE1ADBA21500298B84 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		308881DF1ADBA21500298B84 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		308881E21ADBA21500298B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		308881E41ADBA21500298B84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		308881E71ADBA21500298B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		308881ED1ADBA21500298B84 /* CardTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		308881F21ADBA21500298B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308881F31ADBA21500298B84 /* CardTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTalkTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30733B551AC12F76001DC13D /* Frameworks */ = {
+		308881CE1ADBA21500298B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30733B711AC12F76001DC13D /* Frameworks */ = {
+		308881EA1ADBA21500298B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,63 +63,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30733B4F1AC12F76001DC13D = {
+		308881C81ADBA21500298B84 = {
 			isa = PBXGroup;
 			children = (
-				30733B5A1AC12F76001DC13D /* CardTalk */,
-				30733B771AC12F76001DC13D /* CardTalkTests */,
-				30733B591AC12F76001DC13D /* Products */,
+				308881D31ADBA21500298B84 /* CardTalk */,
+				308881F01ADBA21500298B84 /* CardTalkTests */,
+				308881D21ADBA21500298B84 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		30733B591AC12F76001DC13D /* Products */ = {
+		308881D21ADBA21500298B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30733B581AC12F76001DC13D /* CardTalk.app */,
-				30733B741AC12F76001DC13D /* CardTalkTests.xctest */,
+				308881D11ADBA21500298B84 /* CardTalk.app */,
+				308881ED1ADBA21500298B84 /* CardTalkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30733B5A1AC12F76001DC13D /* CardTalk */ = {
+		308881D31ADBA21500298B84 /* CardTalk */ = {
 			isa = PBXGroup;
 			children = (
-				30733B5F1AC12F76001DC13D /* AppDelegate.h */,
-				30733B601AC12F76001DC13D /* AppDelegate.m */,
-				30733B621AC12F76001DC13D /* FirstViewController.h */,
-				30733B631AC12F76001DC13D /* FirstViewController.m */,
-				30733B651AC12F76001DC13D /* SecondViewController.h */,
-				30733B661AC12F76001DC13D /* SecondViewController.m */,
-				30733B681AC12F76001DC13D /* Main.storyboard */,
-				30733B6B1AC12F76001DC13D /* Images.xcassets */,
-				30733B6D1AC12F76001DC13D /* LaunchScreen.xib */,
-				30733B5B1AC12F76001DC13D /* Supporting Files */,
+				308881D81ADBA21500298B84 /* AppDelegate.h */,
+				308881D91ADBA21500298B84 /* AppDelegate.m */,
+				308881DB1ADBA21500298B84 /* MasterViewController.h */,
+				308881DC1ADBA21500298B84 /* MasterViewController.m */,
+				308881DE1ADBA21500298B84 /* DetailViewController.h */,
+				308881DF1ADBA21500298B84 /* DetailViewController.m */,
+				308881E11ADBA21500298B84 /* Main.storyboard */,
+				308881E41ADBA21500298B84 /* Images.xcassets */,
+				308881E61ADBA21500298B84 /* LaunchScreen.xib */,
+				308881D41ADBA21500298B84 /* Supporting Files */,
 			);
 			path = CardTalk;
 			sourceTree = "<group>";
 		};
-		30733B5B1AC12F76001DC13D /* Supporting Files */ = {
+		308881D41ADBA21500298B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30733B5C1AC12F76001DC13D /* Info.plist */,
-				30733B5D1AC12F76001DC13D /* main.m */,
+				308881D51ADBA21500298B84 /* Info.plist */,
+				308881D61ADBA21500298B84 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		30733B771AC12F76001DC13D /* CardTalkTests */ = {
+		308881F01ADBA21500298B84 /* CardTalkTests */ = {
 			isa = PBXGroup;
 			children = (
-				30733B7A1AC12F76001DC13D /* CardTalkTests.m */,
-				30733B781AC12F76001DC13D /* Supporting Files */,
+				308881F31ADBA21500298B84 /* CardTalkTests.m */,
+				308881F11ADBA21500298B84 /* Supporting Files */,
 			);
 			path = CardTalkTests;
 			sourceTree = "<group>";
 		};
-		30733B781AC12F76001DC13D /* Supporting Files */ = {
+		308881F11ADBA21500298B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30733B791AC12F76001DC13D /* Info.plist */,
+				308881F21ADBA21500298B84 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,13 +127,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30733B571AC12F76001DC13D /* CardTalk */ = {
+		308881D01ADBA21500298B84 /* CardTalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30733B7E1AC12F76001DC13D /* Build configuration list for PBXNativeTarget "CardTalk" */;
+			buildConfigurationList = 308881F71ADBA21500298B84 /* Build configuration list for PBXNativeTarget "CardTalk" */;
 			buildPhases = (
-				30733B541AC12F76001DC13D /* Sources */,
-				30733B551AC12F76001DC13D /* Frameworks */,
-				30733B561AC12F76001DC13D /* Resources */,
+				308881CD1ADBA21500298B84 /* Sources */,
+				308881CE1ADBA21500298B84 /* Frameworks */,
+				308881CF1ADBA21500298B84 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,46 +141,46 @@
 			);
 			name = CardTalk;
 			productName = CardTalk;
-			productReference = 30733B581AC12F76001DC13D /* CardTalk.app */;
+			productReference = 308881D11ADBA21500298B84 /* CardTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30733B731AC12F76001DC13D /* CardTalkTests */ = {
+		308881EC1ADBA21500298B84 /* CardTalkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30733B811AC12F76001DC13D /* Build configuration list for PBXNativeTarget "CardTalkTests" */;
+			buildConfigurationList = 308881FA1ADBA21500298B84 /* Build configuration list for PBXNativeTarget "CardTalkTests" */;
 			buildPhases = (
-				30733B701AC12F76001DC13D /* Sources */,
-				30733B711AC12F76001DC13D /* Frameworks */,
-				30733B721AC12F76001DC13D /* Resources */,
+				308881E91ADBA21500298B84 /* Sources */,
+				308881EA1ADBA21500298B84 /* Frameworks */,
+				308881EB1ADBA21500298B84 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30733B761AC12F76001DC13D /* PBXTargetDependency */,
+				308881EF1ADBA21500298B84 /* PBXTargetDependency */,
 			);
 			name = CardTalkTests;
 			productName = CardTalkTests;
-			productReference = 30733B741AC12F76001DC13D /* CardTalkTests.xctest */;
+			productReference = 308881ED1ADBA21500298B84 /* CardTalkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		30733B501AC12F76001DC13D /* Project object */ = {
+		308881C91ADBA21500298B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Hyungjin Ko";
 				TargetAttributes = {
-					30733B571AC12F76001DC13D = {
+					308881D01ADBA21500298B84 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					30733B731AC12F76001DC13D = {
+					308881EC1ADBA21500298B84 = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 30733B571AC12F76001DC13D;
+						TestTargetID = 308881D01ADBA21500298B84;
 					};
 				};
 			};
-			buildConfigurationList = 30733B531AC12F76001DC13D /* Build configuration list for PBXProject "CardTalk" */;
+			buildConfigurationList = 308881CC1ADBA21500298B84 /* Build configuration list for PBXProject "CardTalk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,29 +188,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 30733B4F1AC12F76001DC13D;
-			productRefGroup = 30733B591AC12F76001DC13D /* Products */;
+			mainGroup = 308881C81ADBA21500298B84;
+			productRefGroup = 308881D21ADBA21500298B84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30733B571AC12F76001DC13D /* CardTalk */,
-				30733B731AC12F76001DC13D /* CardTalkTests */,
+				308881D01ADBA21500298B84 /* CardTalk */,
+				308881EC1ADBA21500298B84 /* CardTalkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		30733B561AC12F76001DC13D /* Resources */ = {
+		308881CF1ADBA21500298B84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30733B6A1AC12F76001DC13D /* Main.storyboard in Resources */,
-				30733B6F1AC12F76001DC13D /* LaunchScreen.xib in Resources */,
-				30733B6C1AC12F76001DC13D /* Images.xcassets in Resources */,
+				308881E31ADBA21500298B84 /* Main.storyboard in Resources */,
+				308881E81ADBA21500298B84 /* LaunchScreen.xib in Resources */,
+				308881E51ADBA21500298B84 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30733B721AC12F76001DC13D /* Resources */ = {
+		308881EB1ADBA21500298B84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,48 +220,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		30733B541AC12F76001DC13D /* Sources */ = {
+		308881CD1ADBA21500298B84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30733B671AC12F76001DC13D /* SecondViewController.m in Sources */,
-				30733B611AC12F76001DC13D /* AppDelegate.m in Sources */,
-				30733B641AC12F76001DC13D /* FirstViewController.m in Sources */,
-				30733B5E1AC12F76001DC13D /* main.m in Sources */,
+				308881DA1ADBA21500298B84 /* AppDelegate.m in Sources */,
+				308881DD1ADBA21500298B84 /* MasterViewController.m in Sources */,
+				308881D71ADBA21500298B84 /* main.m in Sources */,
+				308881E01ADBA21500298B84 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30733B701AC12F76001DC13D /* Sources */ = {
+		308881E91ADBA21500298B84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30733B7B1AC12F76001DC13D /* CardTalkTests.m in Sources */,
+				308881F41ADBA21500298B84 /* CardTalkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30733B761AC12F76001DC13D /* PBXTargetDependency */ = {
+		308881EF1ADBA21500298B84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30733B571AC12F76001DC13D /* CardTalk */;
-			targetProxy = 30733B751AC12F76001DC13D /* PBXContainerItemProxy */;
+			target = 308881D01ADBA21500298B84 /* CardTalk */;
+			targetProxy = 308881EE1ADBA21500298B84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		30733B681AC12F76001DC13D /* Main.storyboard */ = {
+		308881E11ADBA21500298B84 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				30733B691AC12F76001DC13D /* Base */,
+				308881E21ADBA21500298B84 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		30733B6D1AC12F76001DC13D /* LaunchScreen.xib */ = {
+		308881E61ADBA21500298B84 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				30733B6E1AC12F76001DC13D /* Base */,
+				308881E71ADBA21500298B84 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		30733B7C1AC12F76001DC13D /* Debug */ = {
+		308881F51ADBA21500298B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,11 +307,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		30733B7D1AC12F76001DC13D /* Release */ = {
+		308881F61ADBA21500298B84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -342,12 +341,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		30733B7F1AC12F76001DC13D /* Debug */ = {
+		308881F81ADBA21500298B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -357,7 +355,7 @@
 			};
 			name = Debug;
 		};
-		30733B801AC12F76001DC13D /* Release */ = {
+		308881F91ADBA21500298B84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -367,7 +365,7 @@
 			};
 			name = Release;
 		};
-		30733B821AC12F76001DC13D /* Debug */ = {
+		308881FB1ADBA21500298B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -386,7 +384,7 @@
 			};
 			name = Debug;
 		};
-		30733B831AC12F76001DC13D /* Release */ = {
+		308881FC1ADBA21500298B84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -404,32 +402,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30733B531AC12F76001DC13D /* Build configuration list for PBXProject "CardTalk" */ = {
+		308881CC1ADBA21500298B84 /* Build configuration list for PBXProject "CardTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30733B7C1AC12F76001DC13D /* Debug */,
-				30733B7D1AC12F76001DC13D /* Release */,
+				308881F51ADBA21500298B84 /* Debug */,
+				308881F61ADBA21500298B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30733B7E1AC12F76001DC13D /* Build configuration list for PBXNativeTarget "CardTalk" */ = {
+		308881F71ADBA21500298B84 /* Build configuration list for PBXNativeTarget "CardTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30733B7F1AC12F76001DC13D /* Debug */,
-				30733B801AC12F76001DC13D /* Release */,
+				308881F81ADBA21500298B84 /* Debug */,
+				308881F91ADBA21500298B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		30733B811AC12F76001DC13D /* Build configuration list for PBXNativeTarget "CardTalkTests" */ = {
+		308881FA1ADBA21500298B84 /* Build configuration list for PBXNativeTarget "CardTalkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30733B821AC12F76001DC13D /* Debug */,
-				30733B831AC12F76001DC13D /* Release */,
+				308881FB1ADBA21500298B84 /* Debug */,
+				308881FC1ADBA21500298B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 30733B501AC12F76001DC13D /* Project object */;
+	rootObject = 308881C91ADBA21500298B84 /* Project object */;
 }
