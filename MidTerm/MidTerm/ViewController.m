@@ -20,13 +20,14 @@
     self.tableView.dataSource = self;
     [self initImages];
     self.album = [[KHAlbum alloc] init];
-    
+    self.isSort = NO;
     UIBarButtonItem* sortButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(sortImageList:)];
     self.navigationItem.rightBarButtonItem = sortButton;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void) sortImageList:(id)sender {
+    self.isSort = YES;
     [self.album sort];
 }
 
@@ -47,11 +48,21 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    if (self.isSort)
+        return self.album.years.count;
+    else
+        return 1;
+}
+
+-(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (self.isSort)
+        return [self.album.years objectAtIndex:section];
+    return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    if (self.isSort)
+        return [[self.album.sectionCount objectAtIndex:section] intValue];
     return self.images.count;
 }
 
@@ -70,14 +81,22 @@
 
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.images removeObjectAtIndex:indexPath.row];
-        [self reloadTable];
+        if (self.isSort) {
+            int index = [[self.album.startSectionIndex objectAtIndex:indexPath.section] intValue];
+            [self.images removeObjectAtIndex:index + indexPath.row];
+            [self reloadTable];
+        } else {
+            [self.images removeObjectAtIndex:indexPath.row];
+            [self reloadTable];
+        }
+            
     }
 }
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
         self.album = [[KHAlbum alloc] init];
+        self.isSort = NO;
     }
 }
 
@@ -88,7 +107,13 @@
 }
 
 - (void) configureCell:(KHTableViewCell*)cell atIndexPath:(NSIndexPath*) indexPath {
-    NSDictionary* image = self.images[indexPath.row];
+    int index = [[self.album.startSectionIndex objectAtIndex:indexPath.section] intValue];
+    NSDictionary* image;
+    if (self.isSort) {
+        image = self.images[index + indexPath.row];
+    } else {
+        image = self.images[indexPath.row];
+    }
     cell.title.text = image[@"title"];
     cell.date.text = image[@"date"];
     [self setBackGroundImage:image[@"image"] forCell:cell];
@@ -111,7 +136,14 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
-        NSDictionary* imageInfo = self.images[indexPath.row];
+        int index = [[self.album.startSectionIndex objectAtIndex:indexPath.section] intValue];
+        NSDictionary* imageInfo;
+        if (self.isSort) {
+            imageInfo = self.images[index + indexPath.row];
+            
+        } else {
+            imageInfo = self.images[indexPath.row];
+        }
         KHDetailViewController* detailController = [segue destinationViewController];
         detailController.imageInfo = imageInfo;
     }

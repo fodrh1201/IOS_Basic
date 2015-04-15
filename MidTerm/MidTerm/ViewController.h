@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray* images;
 @property (strong, nonatomic) KHAlbum* album;
+@property BOOL isSort;
 
 - (void) reloadTableViewNotification:(NSNotification*) notification;
 

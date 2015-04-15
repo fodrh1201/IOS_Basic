@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) NSMutableArray* images;
 @property char* data;
+@property (strong, nonatomic) NSArray* years;
+@property (strong, nonatomic) NSArray* startSectionIndex;
+@property (strong, nonatomic) NSArray* sectionCount;
 
 -(instancetype)init;
 -(void) sort;

@@ -36,10 +36,12 @@
                                                   options:NSJSONReadingMutableContainers
                                                     error:&jsonError];
     
+    
     NSDictionary* userInfo = @{@"data" : self.images};
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     [nc postNotificationName:@"init-images" object:nil userInfo:userInfo];
-//    NSLog(@"%@", self.images);
+    [self setYearArray];
+    [self setStartSectionIndex];
 }
 
 - (void) sort {
@@ -49,13 +51,36 @@
         return [first compare:second];
     }];
     
+    
     self.images = [NSMutableArray arrayWithArray:sortedArray];
     NSDictionary* userInfo = @{@"data" : self.images};
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     [nc postNotificationName:@"init-images" object:nil userInfo:userInfo];
+    
 //    NSLog(@"%@", self.images);
 }
 
+- (void) setYearArray {
+    NSMutableSet* years = [[NSMutableSet alloc] init];
+    for (NSDictionary* image in self.images) {
+        NSString* date = image[@"date"];
+        [years addObject:[date substringToIndex:4]];
+    }
+    self.years = [NSArray arrayWithArray:[years allObjects]];
+}
 
+- (void) setStartSectionIndex {
+    int count = 0;
+    int anotherCount = 0;
+    for (NSDictionary* image in self.images) {
+        NSString* date = image[@"date"];
+        if ([self.years[0] isEqualToString:[date substringToIndex:4]])
+            count++;
+        else
+            anotherCount++;
+    }
+    self.startSectionIndex = @[ @0, [NSNumber numberWithInt:count]];
+    self.sectionCount = @[ [NSNumber numberWithInteger:count], [NSNumber numberWithInteger:anotherCount]];
+}
 
 @end
