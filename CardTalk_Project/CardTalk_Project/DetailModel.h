@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CardModel.h"
+#import "ChatModel.h"
+
 
 @interface DetailModel : NSObject
+
+@property (strong, nonatomic) CardModel* card;
+@property (strong, nonatomic) NSString* segueIdentifier;
 
 @end

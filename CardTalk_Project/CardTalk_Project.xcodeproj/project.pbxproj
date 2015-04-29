@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304531CB1AEF0CD400567D8C /* GetChats.m in Sources */ = {isa = PBXBuildFile; fileRef = 304531CA1AEF0CD400567D8C /* GetChats.m */; };
+		3047C6901ADBCBCD00114EB1 /* CTBasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C68F1ADBCBCD00114EB1 /* CTBasicCell.m */; };
+		3047C6951ADC01AA00114EB1 /* DynamicLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6941ADC01AA00114EB1 /* DynamicLabel.m */; };
+		3047C6981ADC0F8F00114EB1 /* CTImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6971ADC0F8F00114EB1 /* CTImageCell.m */; };
+		3047C69B1ADC1E2E00114EB1 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C69A1ADC1E2E00114EB1 /* CardModel.m */; };
+		3047C6A11ADCB4C900114EB1 /* CTBasicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6A01ADCB4C900114EB1 /* CTBasicDetailCell.m */; };
+		3047C6A41ADCB4F900114EB1 /* CTImageDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6A31ADCB4F900114EB1 /* CTImageDetailCell.m */; };
+		3047C6A71ADCB56900114EB1 /* CTChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6A61ADCB56900114EB1 /* CTChatCell.m */; };
+		3047C6AA1ADCB5C300114EB1 /* CTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6A91ADCB5C300114EB1 /* CTDetailViewController.m */; };
+		3047C6AD1ADCB5D300114EB1 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6AC1ADCB5D300114EB1 /* ChatModel.m */; };
+		3047C6B01ADCBA0B00114EB1 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6AF1ADCBA0B00114EB1 /* DetailModel.m */; };
+		3047C6B31ADCE67100114EB1 /* CTBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3047C6B21ADCE67100114EB1 /* CTBasicViewController.m */; };
+		305459761AE46E60009A8DC0 /* GetCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 305459751AE46E60009A8DC0 /* GetCards.m */; };
+		305459811AE50C4C009A8DC0 /* GetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 305459801AE50C4C009A8DC0 /* GetImage.m */; };
 		3088820C1ADBA22F00298B84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3088820B1ADBA22F00298B84 /* main.m */; };
 		3088820F1ADBA22F00298B84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3088820E1ADBA22F00298B84 /* AppDelegate.m */; };
-		308882121ADBA22F00298B84 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308882111ADBA22F00298B84 /* MasterViewController.m */; };
-		308882151ADBA22F00298B84 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308882141ADBA22F00298B84 /* DetailViewController.m */; };
+		308882121ADBA22F00298B84 /* CTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308882111ADBA22F00298B84 /* CTMainViewController.m */; };
 		308882181ADBA22F00298B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308882161ADBA22F00298B84 /* Main.storyboard */; };
 		3088821A1ADBA22F00298B84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308882191ADBA22F00298B84 /* Images.xcassets */; };
 		3088821D1ADBA22F00298B84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3088821B1ADBA22F00298B84 /* LaunchScreen.xib */; };
 		308882291ADBA22F00298B84 /* CardTalk_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 308882281ADBA22F00298B84 /* CardTalk_ProjectTests.m */; };
+		30E622341AEDAA6F001003C2 /* CTWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E622331AEDAA6F001003C2 /* CTWriteViewController.m */; };
+		30E622381AEDB05D001003C2 /* CardTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E622371AEDB05D001003C2 /* CardTitle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +43,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		304531C91AEF0CD400567D8C /* GetChats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetChats.h; sourceTree = "<group>"; };
+		304531CA1AEF0CD400567D8C /* GetChats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetChats.m; sourceTree = "<group>"; };
+		3047C68E1ADBCBCD00114EB1 /* CTBasicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBasicCell.h; sourceTree = "<group>"; };
+		3047C68F1ADBCBCD00114EB1 /* CTBasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBasicCell.m; sourceTree = "<group>"; };
+		3047C6931ADC01AA00114EB1 /* DynamicLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLabel.h; sourceTree = "<group>"; };
+		3047C6941ADC01AA00114EB1 /* DynamicLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLabel.m; sourceTree = "<group>"; };
+		3047C6961ADC0F8F00114EB1 /* CTImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTImageCell.h; sourceTree = "<group>"; };
+		3047C6971ADC0F8F00114EB1 /* CTImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTImageCell.m; sourceTree = "<group>"; };
+		3047C6991ADC1E2E00114EB1 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		3047C69A1ADC1E2E00114EB1 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
+		3047C69F1ADCB4C900114EB1 /* CTBasicDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBasicDetailCell.h; sourceTree = "<group>"; };
+		3047C6A01ADCB4C900114EB1 /* CTBasicDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBasicDetailCell.m; sourceTree = "<group>"; };
+		3047C6A21ADCB4F900114EB1 /* CTImageDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTImageDetailCell.h; sourceTree = "<group>"; };
+		3047C6A31ADCB4F900114EB1 /* CTImageDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTImageDetailCell.m; sourceTree = "<group>"; };
+		3047C6A51ADCB56900114EB1 /* CTChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTChatCell.h; sourceTree = "<group>"; };
+		3047C6A61ADCB56900114EB1 /* CTChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTChatCell.m; sourceTree = "<group>"; };
+		3047C6A81ADCB5C300114EB1 /* CTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDetailViewController.h; sourceTree = "<group>"; };
+		3047C6A91ADCB5C300114EB1 /* CTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDetailViewController.m; sourceTree = "<group>"; };
+		3047C6AB1ADCB5D300114EB1 /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		3047C6AC1ADCB5D300114EB1 /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		3047C6AE1ADCBA0B00114EB1 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		3047C6AF1ADCBA0B00114EB1 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		3047C6B11ADCE67100114EB1 /* CTBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBasicViewController.h; sourceTree = "<group>"; };
+		3047C6B21ADCE67100114EB1 /* CTBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBasicViewController.m; sourceTree = "<group>"; };
+		305459741AE46E60009A8DC0 /* GetCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCards.h; sourceTree = "<group>"; };
+		305459751AE46E60009A8DC0 /* GetCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCards.m; sourceTree = "<group>"; };
+		3054597F1AE50C4C009A8DC0 /* GetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImage.h; sourceTree = "<group>"; };
+		305459801AE50C4C009A8DC0 /* GetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImage.m; sourceTree = "<group>"; };
 		308882061ADBA22F00298B84 /* CardTalk_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTalk_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088820A1ADBA22F00298B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3088820B1ADBA22F00298B84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3088820D1ADBA22F00298B84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3088820E1ADBA22F00298B84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		308882101ADBA22F00298B84 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		308882111ADBA22F00298B84 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		308882131ADBA22F00298B84 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		308882141ADBA22F00298B84 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		308882101ADBA22F00298B84 /* CTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTMainViewController.h; sourceTree = "<group>"; };
+		308882111ADBA22F00298B84 /* CTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTMainViewController.m; sourceTree = "<group>"; };
 		308882171ADBA22F00298B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		308882191ADBA22F00298B84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3088821C1ADBA22F00298B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		308882221ADBA22F00298B84 /* CardTalk_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTalk_ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		308882271ADBA22F00298B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308882281ADBA22F00298B84 /* CardTalk_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTalk_ProjectTests.m; sourceTree = "<group>"; };
+		30E622321AEDAA6F001003C2 /* CTWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWriteViewController.h; sourceTree = "<group>"; };
+		30E622331AEDAA6F001003C2 /* CTWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWriteViewController.m; sourceTree = "<group>"; };
+		30E622361AEDB05D001003C2 /* CardTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTitle.h; sourceTree = "<group>"; };
+		30E622371AEDB05D001003C2 /* CardTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTitle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +108,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3047C6881ADBC8F200114EB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30E622351AEDB033001003C2 /* textField */,
+				3047C6921ADBD38700114EB1 /* Label */,
+				3047C6891ADBC90200114EB1 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3047C6891ADBC90200114EB1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3047C68E1ADBCBCD00114EB1 /* CTBasicCell.h */,
+				3047C68F1ADBCBCD00114EB1 /* CTBasicCell.m */,
+				3047C6961ADC0F8F00114EB1 /* CTImageCell.h */,
+				3047C6971ADC0F8F00114EB1 /* CTImageCell.m */,
+				3047C69F1ADCB4C900114EB1 /* CTBasicDetailCell.h */,
+				3047C6A01ADCB4C900114EB1 /* CTBasicDetailCell.m */,
+				3047C6A21ADCB4F900114EB1 /* CTImageDetailCell.h */,
+				3047C6A31ADCB4F900114EB1 /* CTImageDetailCell.m */,
+				3047C6A51ADCB56900114EB1 /* CTChatCell.h */,
+				3047C6A61ADCB56900114EB1 /* CTChatCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		3047C68D1ADBCA6000114EB1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				308882101ADBA22F00298B84 /* CTMainViewController.h */,
+				308882111ADBA22F00298B84 /* CTMainViewController.m */,
+				3047C6A81ADCB5C300114EB1 /* CTDetailViewController.h */,
+				3047C6A91ADCB5C300114EB1 /* CTDetailViewController.m */,
+				3047C6B11ADCE67100114EB1 /* CTBasicViewController.h */,
+				3047C6B21ADCE67100114EB1 /* CTBasicViewController.m */,
+				30E622321AEDAA6F001003C2 /* CTWriteViewController.h */,
+				30E622331AEDAA6F001003C2 /* CTWriteViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3047C6911ADBCE3600114EB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3047C6991ADC1E2E00114EB1 /* CardModel.h */,
+				3047C69A1ADC1E2E00114EB1 /* CardModel.m */,
+				3047C6AB1ADCB5D300114EB1 /* ChatModel.h */,
+				3047C6AC1ADCB5D300114EB1 /* ChatModel.m */,
+				3047C6AE1ADCBA0B00114EB1 /* DetailModel.h */,
+				3047C6AF1ADCBA0B00114EB1 /* DetailModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3047C6921ADBD38700114EB1 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				3047C6931ADC01AA00114EB1 /* DynamicLabel.h */,
+				3047C6941ADC01AA00114EB1 /* DynamicLabel.m */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		305459771AE470E6009A8DC0 /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				305459741AE46E60009A8DC0 /* GetCards.h */,
+				305459751AE46E60009A8DC0 /* GetCards.m */,
+				3054597F1AE50C4C009A8DC0 /* GetImage.h */,
+				305459801AE50C4C009A8DC0 /* GetImage.m */,
+				304531C91AEF0CD400567D8C /* GetChats.h */,
+				304531CA1AEF0CD400567D8C /* GetChats.m */,
+			);
+			name = Connect;
+			sourceTree = "<group>";
+		};
 		308881FD1ADBA22F00298B84 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +206,12 @@
 		308882081ADBA22F00298B84 /* CardTalk_Project */ = {
 			isa = PBXGroup;
 			children = (
+				305459771AE470E6009A8DC0 /* Connect */,
+				3047C6911ADBCE3600114EB1 /* Model */,
+				3047C68D1ADBCA6000114EB1 /* ViewController */,
+				3047C6881ADBC8F200114EB1 /* View */,
 				3088820D1ADBA22F00298B84 /* AppDelegate.h */,
 				3088820E1ADBA22F00298B84 /* AppDelegate.m */,
-				308882101ADBA22F00298B84 /* MasterViewController.h */,
-				308882111ADBA22F00298B84 /* MasterViewController.m */,
-				308882131ADBA22F00298B84 /* DetailViewController.h */,
-				308882141ADBA22F00298B84 /* DetailViewController.m */,
 				308882161ADBA22F00298B84 /* Main.storyboard */,
 				308882191ADBA22F00298B84 /* Images.xcassets */,
 				3088821B1ADBA22F00298B84 /* LaunchScreen.xib */,
@@ -122,6 +244,15 @@
 				308882271ADBA22F00298B84 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30E622351AEDB033001003C2 /* textField */ = {
+			isa = PBXGroup;
+			children = (
+				30E622361AEDB05D001003C2 /* CardTitle.h */,
+				30E622371AEDB05D001003C2 /* CardTitle.m */,
+			);
+			name = textField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +355,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E622341AEDAA6F001003C2 /* CTWriteViewController.m in Sources */,
+				3047C6AA1ADCB5C300114EB1 /* CTDetailViewController.m in Sources */,
+				305459811AE50C4C009A8DC0 /* GetImage.m in Sources */,
 				3088820F1ADBA22F00298B84 /* AppDelegate.m in Sources */,
-				308882121ADBA22F00298B84 /* MasterViewController.m in Sources */,
+				3047C6B31ADCE67100114EB1 /* CTBasicViewController.m in Sources */,
+				3047C69B1ADC1E2E00114EB1 /* CardModel.m in Sources */,
+				304531CB1AEF0CD400567D8C /* GetChats.m in Sources */,
+				3047C6AD1ADCB5D300114EB1 /* ChatModel.m in Sources */,
+				3047C6B01ADCBA0B00114EB1 /* DetailModel.m in Sources */,
+				3047C6A41ADCB4F900114EB1 /* CTImageDetailCell.m in Sources */,
+				3047C6A11ADCB4C900114EB1 /* CTBasicDetailCell.m in Sources */,
+				30E622381AEDB05D001003C2 /* CardTitle.m in Sources */,
+				3047C6A71ADCB56900114EB1 /* CTChatCell.m in Sources */,
+				308882121ADBA22F00298B84 /* CTMainViewController.m in Sources */,
 				3088820C1ADBA22F00298B84 /* main.m in Sources */,
-				308882151ADBA22F00298B84 /* DetailViewController.m in Sources */,
+				305459761AE46E60009A8DC0 /* GetCards.m in Sources */,
+				3047C6951ADC01AA00114EB1 /* DynamicLabel.m in Sources */,
+				3047C6981ADC0F8F00114EB1 /* CTImageCell.m in Sources */,
+				3047C6901ADBCBCD00114EB1 /* CTBasicCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +564,7 @@
 				3088822E1ADBA22F00298B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3088822F1ADBA22F00298B84 /* Build configuration list for PBXNativeTarget "CardTalk_ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +573,7 @@
 				308882311ADBA22F00298B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
